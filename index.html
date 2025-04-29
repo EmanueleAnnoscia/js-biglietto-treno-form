@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                <div class="col-12 ">
+                    <form action="" id="travelcard-form">
+                        <div class="col-12 col-lg-4">
+                            <label class="form-label" for="name">Nome e Cognome</label>
+                            <input class="form-control" type="text" id="name">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <label class="form-label" for="km">KM da percorrere</label>
+                            <input class="form-control" type="number" id="km">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <label class="form-label" for="age">Fascia di età</label>
+                            <input class="form-control" type="number" id="age">
+                        </div>
+                    </form>
+                    <button class="btn btn-primary m-3" type="submit">
+                        GENERA
+                    </button>
+                    <button class="btn btn-primary m-3 " type="submit">
+                        ANNULLA
+                    </button>
+                </div>
+                <h2 class="m-3">IL TUO BIGLIETTO</h2>
+                <div class="col-12">
+                    <div class="col-12 col-lg-4">DETTAGLIO PASSEGGERI
+                        <h5>Nome Passeggero</h5>
+                        <h6 id="passenger"></h6>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="col-3">
+                            <h5>OFFERTA</h5>
+                            <p id="offer"></p>
+                        </div>
+                        <div class="col-3">
+                            <h5>CARROZZA</h5>
+                            <p id="carrozza"></p>
+                        </div>
+                        <div class="col-3">
+                            <h5>CODICE CP</h5>
+                            <p id="codecp"></p>
+                        </div>
+                        <div class="col-3">
+                            <h5>COSTO DEL BIGLIETTO</h5>
+                            <p id="ticketcost"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
