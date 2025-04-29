@@ -13,7 +13,7 @@ const passengerElem = document.getElementById("passenger");
 const offerElem = document.getElementById ("offer");
 const carrozzaElem = document.getElementById ("carrozza");
 const codecpElem = document.getElementById ("codecp");
-const ticketcost = document.getElementById ("ticketcost");
+const ticketcostElem = document.getElementById ("ticketcost");
 
 formElem.addEventListener("submit", handleForm);
 
@@ -73,8 +73,11 @@ function handleForm(event){
 
     console.log(`il prezzo finale del tuo biglietto è di € ${finalPrice.toFixed(2)}`);
 
-    passengerElem.innerHTML = `${passenger}`
-    offerElem.innerHTML = 
+    passengerElem.innerHTML = `${passenger}`;
+    // offerElem.innerHTML = da aggiungere alla condizione le tre tipologie di biglietto standard, sconto vecchi, sconto giovani
+    carrozzaElem.innerHTML =  Math.random();
+    codecpElem.innerHTML = Math.random();
+    ticketcostElem = `${finalPrice}`
 }   
 
 
