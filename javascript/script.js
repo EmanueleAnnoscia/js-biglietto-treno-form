@@ -86,7 +86,11 @@ resetButton.addEventListener("click", function () {
     carrozzaElem.innerText = "";
     codecpElem.innerText = "";
     ticketcostElem.innerText = "";
+
+    ticketElem.classList.add("d-none")
 });
+
+
 
 
 
