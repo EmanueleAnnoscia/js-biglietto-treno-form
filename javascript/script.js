@@ -23,7 +23,7 @@ function handleForm(event){
 
     // prelevo tutti i valori degli input
     const name = nameInput.value;
-    const km = kmInput.value;
+    const km = parseInt(kmInput.value);
     const age = parseInt(ageInput.value);
 
     // debug
