@@ -14,6 +14,8 @@ const offerElem = document.getElementById ("offer");
 const carrozzaElem = document.getElementById ("carrozza");
 const codecpElem = document.getElementById ("codecp");
 const ticketcostElem = document.getElementById ("ticketcost");
+const ticketElem = document.getElementById("ticket")
+
 
 formElem.addEventListener("submit", handleForm);
 const resetButton = document.getElementById("annulla");
@@ -73,6 +75,8 @@ function handleForm(event){
     carrozzaElem.innerText =  Math.floor(Math.random()*10 + 1);
     codecpElem.innerText = Math.floor(Math.random()*100000);
     ticketcostElem.innerText = "€" + finalPrice.toFixed(2);
+
+    ticketElem.classList.remove("d-none")
 }   
 
 
